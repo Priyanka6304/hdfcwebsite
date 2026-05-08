@@ -7,8 +7,6 @@ services:
       - "81:80"
     deploy:
       replicas: 3
-    volumes:
-      - /var/lib/internetbanking:/usr/share/nginx/html
 
   mobilebanking:
     image: priyankadevops6304/mobilebanking:latest
@@ -16,8 +14,6 @@ services:
       - "82:80"
     deploy:
       replicas: 3
-    volumes:
-      - /var/lib/mobilebanking:/usr/share/nginx/html
 
   insurance:
     image: priyankadevops6304/insurance:latest
@@ -25,8 +21,6 @@ services:
       - "83:80"
     deploy:
       replicas: 3
-    volumes:
-      - /var/lib/insurance:/usr/share/nginx/html
 
   loans:
     image: priyankadevops6304/loans:latest
@@ -34,5 +28,3 @@ services:
       - "84:80"
     deploy:
       replicas: 3
-    volumes:
-      - /var/lib/loans:/usr/share/nginx/html
